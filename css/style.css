@@ -371,14 +371,14 @@ footer .rodape{
 /*Icones do canto da tela*/
 .icon{
     position: fixed;
-    bottom: 5em;
+    bottom: 3em;
     right: 2em;
     z-index: 99;
 }
 
 .icon2{
     position: fixed;
-    bottom: 9em;
+    bottom: 7em;
     right: 2em;
     z-index: 99;
 }
