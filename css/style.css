@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: rgb(189, 58, 7);
+}
+
+body{
+    --background: #fff;
+    overflow-x: hidden;
+
+    background-color: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+/*Cabeçalho*/
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 88;
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#compras{
+    display: flex;
+    gap: 2em;
+    font-size: 1.1em;
+}
+
+#logo-header img{
+    border-radius: 100%;
+}
+
+#menu{
+    background-color: #060B0E;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.397);
+}
+
+#menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    padding: 0.3em 0;
+}
+
+#menu ul li{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#menu ul li:hover{
+    color: rgb(224, 191, 173);
+}
+
+.form-group{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 2.5em;
+    padding:  1em;
+    margin-top: 1em;
+}
+
+#pesquisa-header span{
+    color: rgb(189, 58, 7);
+}
+
+#pesquisa-header p:hover{
+    cursor: pointer;
+    color: rgb(189, 58, 7);
+}
+
+.form-group i{
+    cursor: pointer;
+}
+
+input#search{
+    border: none;
+    outline: none;
+    width: 400px;
+}
+/*Carroseul do main*/
+
+img{
+    cursor: pointer;
+}
+
+.carousels h2 {
+    text-align: center;
+    font-size: 2.4em;
+    letter-spacing: 6px;
+    margin-top: 3em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+    text-shadow: 5px 4px 4px rgb(206, 90, 55);
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin-top: 1.5em;
+    overflow-x: hidden;
+
+}
+
+/*Carrossel 01*/
+
+.carousel1 {
+    display: flex;
+    margin-left: 1em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item1 {
+    min-width: 24.9%;
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.carousel-item1 img {
+    width: 100%;
+}
+
+.carousel-item1:hover {
+    box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+/*Carrossel 02*/
+.carousel2 {
+    display: flex;
+    margin-left: 1em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item2 {
+    min-width: 24.9%;
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.carousel-item2 img {
+    width: 100%;
+}
+
+.carousel-item2:hover {
+    box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+/*Carrossel 03*/
+.carousel3 {
+    display: flex;
+    margin-left: 1em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item3 {
+    min-width: 24.9%;
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.carousel-item3 img {
+    width: 100%;
+}
+
+.carousel-item3:hover {
+    box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+/*Carrossel 04*/
+.carousel4 {
+    display: flex;
+    margin-left: 1em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item4 {
+    min-width: 24.9%;
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.carousel-item4 img {
+    width: 100%;
+}
+
+.carousel-item4:hover {
+    box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+/*Botoes carrosel*/
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+    z-index: 4;
+}
+
+.next {
+    right: 10px;
+}
+
+/*Carrosel de Principal Home
+************************************************/
+.carousel {
+    margin-top: 11em;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    border-radius: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    pointer-events: all;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.h-40{
+    height: 500px;
+}
+
+.carousels a{
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.preco-prazo p{
+    color: red;
+    font-size: 1.2em;
+    padding: 0.5em 0;
+    font-weight: bold;
+}
+
+.preco-avista p{
+    color: blue;
+    font-size: 1.2em;
+    padding: 0.5em 0;
+    font-weight: bold;
+}
+
+
+/*Footer*/
+
+footer{
+    background-color: #060B0E;
+    color: white;
+    margin-top: 6em;
+    padding: 4em 0 1em;
+    border-top: 4px solid rgb(206, 90, 55);
+}
+
+footer a{
+    color: white;
+}
+
+footer .rodape{
+    display: flex;
+    gap: 9em;
+}
+
+#categorias-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#conteudo-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#sobre-footer p{
+    padding-top: 1em;
+    line-height: 1.5em;
+}
+
+#direitos-footer{
+    margin-top: 4em;
+    padding-top: 1em;
+    border-top: 1px solid rgba(255, 255, 255, 0.295);
+    text-align: center;
+}
+
+
+/*Icones do canto da tela*/
+.icon{
+    position: fixed;
+    bottom: 5em;
+    right: 2em;
+    z-index: 99;
+}
+
+.icon2{
+    position: fixed;
+    bottom: 9em;
+    right: 2em;
+    z-index: 99;
+}
+
+.icon2:hover{animation: 0.5S translate alternate infinite;}
+.icon:hover{animation: 0.5S translate alternate infinite;}
+
+
+@keyframes translate {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-8px);
+    }
+    
+}
